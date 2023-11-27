@@ -10,58 +10,38 @@
             margin: 0;
             padding: 0;
             display: flex;
-        }
-
-        #sidenav {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            margin-left: auto;
-            direction: rtl;
-            display: flex;
             flex-direction: column;
-            /* align-items: flex-end; */
-            text-align: right;
-            
         }
 
-        #logo {
-            margin-bottom: 20px;
-            margin-right: 20px; /* Adjust margin for right alignment */
+        #top-navbar {
+            background-color: #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
         }
 
-        #user-info {
-            margin-bottom: 20px;
-            margin-right: 20px; /* Adjust margin for right alignment */
+        #notification-icon-top {
+            margin-left: 20px;
         }
 
-        #user-guide {
-            font-weight: bold;
-            margin-bottom: 10px;
-            margin-right: 20px; /* Adjust margin for right alignment */
+        #log-icon-top {
+            margin-right: 20px;
         }
 
-        #sections {
-            margin-bottom: 20px;
-            text-align: right;
-            padding-right: 20px; /* Adjust padding for right alignment */
+        #main-content {
+            display: flex;
         }
 
-        #profile-settings {
-            text-align: center;
-            padding: 20px;
-            background-color: #555;
-            color: #fff;
-        }
         #recommended-section {
             flex: 1;
             padding: 20px;
-            text-align: right; /* Ensure text alignment on the right */
+            text-align: right;
         }
 
         .widgets-container {
             display: flex;
-            text-align: right; /* Ensure text alignment on the right */
+            text-align: right;
         }
 
         .widget {
@@ -72,39 +52,87 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
+        #sidenav {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+        }
+
+        #logo {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        #user-info {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        #user-guide {
+            font-weight: bold;
+            margin-bottom: 10px;
+            margin-right: 20px;
+        }
+
+        #sections {
+            margin-bottom: 20px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        #profile-settings {
+            text-align: center;
+            padding: 20px;
+            background-color: #555;
+            color: #fff;
+        }
+
     </style>
 </head>
 <body>
 
-<div id="recommended-section">
-    <h2>Recommended</h2>
-    <div>Set up the basics</div>
-    <div>Import your contacts, invite teammates, and understand HubSpot properties</div>
-    <div>Start tasks</div>
-    <div class="widgets-container">
-        <div class="widget">Professional Services</div>
-        <div class="widget">Marketing</div>
-        <div class="widget">Sales</div>
+<div id="top-navbar">
+    <div id="notification-icon-top">
+        <i class="fas fa-bell"></i>
+        <i class="fas fa-sign-in-alt"></i>
+    </div>
+    <div id="log-icon-top">
+        <div id="logo-top">Your Logo</div>
     </div>
 </div>
 
-<div id="sidenav">
-    <div id="logo">Your Logo</div>
-    <div id="user-info">
-        <img src="user-image.jpg" alt="User Image" width="50" height="50">
-        <div>Name</div>
-        <div>Position</div>
+<div id="main-content">
+    <div id="recommended-section">
+        <h2>Recommended</h2>
+        <div>Set up the basics</div>
+        <div>Import your contacts, invite teammates, and understand HubSpot properties</div>
+        <div>Start tasks</div>
+        <div class="widgets-container">
+            <div class="widget">Professional Services</div>
+            <div class="widget">Marketing</div>
+            <div class="widget">Sales</div>
+        </div>
     </div>
-    <div id="user-guide">User Guide</div>
-    <div id="sections">
-        <div><i class="fas fa-chart-bar"></i> Sales</div>
-        <div><i class="fas fa-bullhorn"></i> Marketing</div>
-        <div><i class="fas fa-cogs"></i> Professional Service</div>
-    </div>
-    <div id="profile-settings">
-        <img src="profile-icon.png" alt="Profile Icon" width="30" height="30">
-        <img src="settings-icon.png" alt="Settings Icon" width="30" height="30">
+
+    <div id="sidenav">
+        <div id="user-info">
+            <img src="user-image.jpg" alt="User Image" width="50" height="50">
+            <div>Name</div>
+            <div>Position</div>
+        </div>
+        <div id="user-guide">User Guide</div>
+        <div id="sections">
+            <div><i class="fas fa-chart-bar"></i> Sales</div>
+            <div><i class="fas fa-bullhorn"></i> Marketing</div>
+            <div><i class="fas fa-cogs"></i> Professional Service</div>
+        </div>
+        <div id="profile-settings">
+            <img src="profile-icon.png" alt="Profile Icon" width="30" height="30">
+            <img src="settings-icon.png" alt="Settings Icon" width="30" height="30">
+        </div>
     </div>
 </div>
 
