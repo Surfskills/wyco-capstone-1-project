@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#top-navbar {
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#notification-icon-top {
+    margin-left: 20px;
+}
+
+#log-icon-top {
+    margin-right: 20px;
+}
+
+#main-content {
+    display: flex;
+}
+
+#recommended-section {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.widgets-container {
+    display: flex;
+    text-align: right;
+}
+
+.widget {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidenav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+
+#logo {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#user-info {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+#user-guide {
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+#sections {
+    margin-bottom: 20px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#profile-settings {
+    text-align: center;
+    padding: 20px;
+    background-color: #555;
+    color: #fff;
+}
